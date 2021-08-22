@@ -4,58 +4,72 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!-- Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap" rel="stylesheet">
+
+      <!-- StyleSheet -->
       <link rel="stylesheet" href="day2.css">
-      <title>Document</title>
+      <title>Picture Gallery</title>
 </head>
 <body>
       <div class="container">
+            <!-- Heading -->
             <div class="heading">
                   <h1>Gallery</h1>
             </div>
+
+            <!-- Flower Section -->
             <div class="image">
-                  <div class="block1">
+                  <div class="flower__left block">
                         <img src="1.jpg" alt="" srcset="">
                   </div>
-                  <div class="block1">
+                  <div class="flower__left block">
                         <img src="2.jpg" alt="" srcset="">
 
                   </div>
-                  <div class="block2">
+                  <div class="flower__right block">
                         <img src="3.jpg" alt="" srcset="">
                   </div>
-
-
             </div>
+
+            <!-- Marquee Section -->
             <div class="marquee">
-                  <Marquee >
-                        <h2>Hello I am Marquee</h2>
+                  <Marquee onmouseover="this.stop();" onmouseout="this.start();">
+                        <h2>Hi, I am <span style="color:#10121b;">Manish Kumar</span>. I’m a front-end developer 
+                              with a keen eye for creating engaging UI, bringing products to life. For more information, please visit <a href="https://www.theunsettledbihari.tk/" target="_blank">Website</a></h2>
                   </Marquee>
             </div>
+
+            <!-- Pets Section -->
             <div class="image">
-                  <div class="pet__left">
+                  <div class="pet__left block">
                         <img src="4.jpg" alt="" srcset="" >
                   </div>
-                  <div class="pet__left">
+                  <div class="pet__left block">
                         <img src="6.jpg" alt="" srcset="" >
                   </div>
-                  <div class="pet__right">
+                  <div class="pet__right block">
                         <img src="7.jpg" alt="" srcset="" >
                   </div>
-                  <div class="pet__right">
+                  <div class="pet__right block">
                         <img src="5.jpg" alt="" srcset="" >
                   </div>
-
             </div>
+
+
+            <!-- Birds Section -->
             <div class="image">
-                  <div class="bird__left">
+                  <div class="bird__left block">
                         <img src="8.jpg" alt="" srcset="" >
                   </div>
-                  <div class="bird__right">
+                  <div class="bird__right block">
                         <img src="9.jpg" alt="" srcset="" >
                   </div>
-
-
             </div>
       </div>
+      
 </body>
 </html>

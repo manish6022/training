@@ -10,16 +10,14 @@
 }
 
 .image{
-      width: 100%;
       background-color: thistle;
-      object-fit: fill;
 }
-.block1{
+.flower__left{
       width: 33.33%;
       height: 100%;
       float: left;
 }
-.block2{
+.flower__right{
       width: 33.33%;
       height: 100%;
       float: right;
@@ -53,13 +51,20 @@ Marquee{
 img{
       max-width: 100%;
       min-width: 100%;
-      transition: all 0.4s ease 0s;
-      padding: 5px;
+      vertical-align: middle;
+      padding:1%;
 }
-img:hover{
+
+.block{
+      transition: all 0.4s ease 0s;
+      padding: 0;
+      margin: 0;
+}
+.block:hover{
       cursor: pointer;
       transform: translateY(-10px);
       box-shadow: whitesmoke;
       box-shadow: 0 16px 32px 0 rgba(26, 11, 11, 0.5);
-}
+      border: 1px solid rgb(134, 132, 133);
 
+}
